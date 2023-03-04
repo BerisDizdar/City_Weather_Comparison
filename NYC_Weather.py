@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np 
 import datetime 
 
+#DataFrame
 df_NYC_W = pd.read_csv('New_York_Weather.csv') 
 
 #Visualizing data
@@ -39,6 +40,7 @@ NYC_Oct_data = df_NYC_W[273:304]
 NYC_Nov_data = df_NYC_W[304:334]
 NYC_Dec_data = df_NYC_W[334:365]
 
+#Calculations
 NYC_monthly_mean = df_NYC_W.groupby(df_NYC_W.DATE.dt.month)[['HIGH', 'LOW', 'AVERAGE', 'SNOW', 'PRECIPITATION']].mean()
 #print(round(NYC_monthly_mean, 2))
 NYC_monthly_max = df_NYC_W.groupby(df_NYC_W.DATE.dt.month)[['HIGH', 'LOW', 'AVERAGE', 'SNOW', 'PRECIPITATION']].max() 

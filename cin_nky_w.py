@@ -49,7 +49,7 @@ C_NKY_Oct_data = df_cin_nky_w[273:304]
 C_NKY_Nov_data = df_cin_nky_w[304:334]
 C_NKY_Dec_data = df_cin_nky_w[334:365]
 
-
+#Calculations
 C_NKY_Jan_temp_high = C_NKY_Jan_data['HIGH'].max(), C_NKY_Jan_data['HIGH'].median(), C_NKY_Jan_data['HIGH'].min(), C_NKY_Jan_data['HIGH'].mean()  
 C_NKY_Jan_temp_low = C_NKY_Jan_data['LOW'].max(), C_NKY_Jan_data['LOW'].median(), C_NKY_Jan_data['LOW'].min(), C_NKY_Jan_data['HIGH'].mean()  
 #print(Jan_temp_low, Jan_temp_high) 
@@ -91,4 +91,4 @@ plt.xlabel('temp')
 plt.ylabel('frequency') 
 #print(plt.show()) '''
 
-#print(C_NKY_monthly_avg) 
+print(C_NKY_monthly_avg) 
