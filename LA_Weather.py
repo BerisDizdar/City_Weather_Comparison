@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np 
 
 #DataFrame 
-df_LA_W = pd.read_csv('Los_Angeles_Weather.csv')
+df_LA_W = pd.read_csv('Weather_Datasets/Los_Angeles_Weather.csv')
 
 #Visualizing data 
 df_LA_W.head()
@@ -39,7 +39,7 @@ LA_Oct_data = df_LA_W[273:304]
 LA_Nov_data = df_LA_W[304:334]
 LA_Dec_data = df_LA_W[334:365]
 
-#print(LA_Dec_data) 
+print(LA_Dec_data) 
 
 #Calculations
 LA_monthly_mean = df_LA_W.groupby(df_LA_W.DATE.dt.month)[['HIGH', 'LOW', 'AVERAGE', 'SNOW', 'PRECIPITATION']].mean()

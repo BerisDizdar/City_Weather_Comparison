@@ -4,7 +4,7 @@ import numpy as np
 import datetime 
 
 #DataFrame
-df_Louis_w = pd.read_csv('Louisville_Weather_CSV.csv') 
+df_Louis_w = pd.read_csv('Weather_Datasets/Louisville_Weather_CSV.csv') 
 
 #Visualizing data
 df_Louis_w.tail(15) 

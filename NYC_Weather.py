@@ -4,7 +4,7 @@ import numpy as np
 import datetime 
 
 #DataFrame
-df_NYC_W = pd.read_csv('New_York_Weather.csv') 
+df_NYC_W = pd.read_csv('Weather_Datasets/New_York_Weather.csv') 
 
 #Visualizing data
 df_NYC_W.head() 

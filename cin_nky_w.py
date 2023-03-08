@@ -5,7 +5,7 @@ import datetime
 import matplotlib.pyplot as plt 
 
 #DataFrame
-df_cin_nky_w = pd.read_csv('Weather_Data-Cinci_NKY_Weather.csv') 
+df_cin_nky_w = pd.read_csv('Weather_Datasets/Weather_Data-Cinci_NKY_Weather.csv') 
 
 #Visualizing Data
 df_cin_nky_w.head(15) 
@@ -61,7 +61,7 @@ C_NKY_Jan_snow = C_NKY_Jan_data['SNOW'].sum()
  
 #Monthly calculations
 C_NKY_monthly_mean = df_cin_nky_w.groupby(df_cin_nky_w.DATE.dt.month)[['HIGH', 'LOW', 'SNOW', 'PRECIPITATION']].mean() 
-#print(round(C_NKY_monthly_mean, 2))
+print(round(C_NKY_monthly_mean, 2))
 C_NKY_monthly_max = df_cin_nky_w.groupby(df_cin_nky_w.DATE.dt.month)[['HIGH', 'LOW', 'SNOW', 'PRECIPITATION']].max() 
 #print(C_NKY_monthly_max) 
 C_NKY_monthly_min = df_cin_nky_w.groupby(df_cin_nky_w.DATE.dt.month)[['HIGH', 'LOW', 'SNOW', 'PRECIPITATION']].min()
@@ -89,6 +89,11 @@ plt.figure(figsize = (12, 6))
 plt.plot(C_NKY_Jan_data['HIGH', 'LOW'], bins = 15, rwidth = 0.8)
 plt.xlabel('temp')
 plt.ylabel('frequency') 
-#print(plt.show()) '''
+#print(plt.show()) ''' 
 
-print(C_NKY_monthly_avg) 
+plt.plot(C_NKY_Jan_temp_high, 'o')
+plt.xlabel('Max Median Min Mean')
+plt.ylabel('High Temperature') 
+print(plt.show()) 
+
+print(C_NKY_Jan_temp_high) 
