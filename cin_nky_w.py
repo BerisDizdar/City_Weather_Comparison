@@ -23,11 +23,11 @@ snow_fall = df_cin_nky_w['SNOW']
 rain_fall = df_cin_nky_w['PRCP']
 
 #Renaming Columns
-'''df_cin_nky_w.rename(columns = {'NAME': 'LOCATION'}, inplace= True)
+df_cin_nky_w.rename(columns = {'NAME': 'LOCATION'}, inplace= True)
 df_cin_nky_w.rename(columns = {'TMIN': 'LOW'}, inplace = True)
 df_cin_nky_w.rename(columns = {'TMAX': 'HIGH'}, inplace = True) 
 df_cin_nky_w.rename(columns = {'PRCP': 'PRECIPITATION'}, inplace = True)  
-df_cin_nky_w.rename(columns = {'TAVG': 'AVERAGE'}, inplace = True)'''   
+df_cin_nky_w.rename(columns = {'TAVG': 'AVERAGE'}, inplace = True)  
 
 #Remove Columns
 df_cin_nky_w.drop(columns = ['LATITUDE', 'LONGITUDE'], inplace = True)  
@@ -68,24 +68,5 @@ C_NKY_monthly_mean2 = df_cin_nky_w.groupby(df_cin_nky_w.DATE.dt.strftime('%B'))[
 #print(round(C_NKY_monthly_mean2, 2)) 
 
 print(C_NKY_monthly_mean2.sort_values('DATE'))
-
-axis1 = C_NKY_Aug_data['HIGH'] 
-#print(axis1) 
-axis2 = C_NKY_Dec_data['LOW'] 
-#print(axis2) 
-
-#print(plt.plot(axis1, axis2, 'o'))  
-
-#Histogram Graph
-'''plt.figure(figsize = (12, 6))
-plt.plot(C_NKY_monthly, bins = 15, rwidth = 0.8)
-plt.xlabel('temp')
-plt.ylabel('frequency') 
-#print(plt.show())'''
-
-'''plt.plot(C_NKY_monthly_mean2, 'o')
-plt.xlabel('Max Median Min Mean')
-plt.ylabel('High Temperature') 
-#print(plt.show())''' 
 
 df_cin_nky_w.head()

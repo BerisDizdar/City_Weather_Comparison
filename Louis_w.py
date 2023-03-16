@@ -14,12 +14,6 @@ data_types = df_Louis_w.dtypes
 #print(data_types) 
 
 #Renaming columns
-'''df_Louis_w.rename(columns = {'NAME': 'LOCATION'}, inplace = True) 
-df_Louis_w.rename(columns = {'TMIN': 'LOW'}, inplace = True)
-df_Louis_w.rename(columns = {'TMAX': 'HIGH'}, inplace = True) 
-df_Louis_w.rename(columns = {'PRCP': 'PRECIPITATION'}, inplace = True) 
-df_Louis_w.rename(columns = {'TAVG': 'AVERAGE'}, inplace = True)'''
-
 df_Louis_w.rename(columns = {'NAME': 'LOCATION', 'TMIN': 'LOW', 'TMAX': 'HIGH', 'PRCP': 'PRECIPITATION', 'TAVG': 'AVERAGE' }, inplace = True) 
 
 df_Louis_w['DATE'] = pd.to_datetime(df_Louis_w['DATE']) 
