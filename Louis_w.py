@@ -9,9 +9,9 @@ df_Louis_w = pd.read_csv('Weather_Datasets/Louisville_Weather_CSV.csv')
 #Visualizing data
 df_Louis_w.tail(15) 
 column_list = df_Louis_w.columns
-#print(column_list) 
+print(column_list) 
 data_types = df_Louis_w.dtypes 
-#print(data_types) 
+print(data_types) 
 
 #Renaming columns
 df_Louis_w.rename(columns = {'NAME': 'LOCATION', 'TMIN': 'LOW', 'TMAX': 'HIGH', 'PRCP': 'PRECIPITATION', 'TAVG': 'AVERAGE' }, inplace = True) 
