@@ -38,14 +38,13 @@ Use pip3 to install Matplotlib
 pip3 install matplotlib
 
 Numpy and DateTime should come with python, if not use the following instructions to install each package:
-
 Use pip3 to install DateTime
 pip3 install DateTime
 
 Use pip3 to install Numpy
 pip3 install numpy
 
-## Features Required for Project
+## Features Required for Project by CodeKY
 Feature 1: Read in local csv file using Pandas read_function.
 
 Feature 2: Use built in Pandas functions to remove unnecessary columns, rename column names, fill NaN values with 0, change dates to DateTime, concatinate and groupby data.
