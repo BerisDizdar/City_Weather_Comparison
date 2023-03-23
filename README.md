@@ -1,5 +1,5 @@
 # City_Weather_Comparison
-Open the City_Weather_Comparison.ipynb file.
+Open the 'City_Weather_Comparison.ipynb' file.
 
 This Jupyter Notebook contains daily weather data for Cincinnati OH/Northern KY, Louisville KY, New York City NY, and Los Angeles CA, from January 2022 to December 2022. Analysis of daily temperature highs, lows, and averages, as well as snowfall and precipitation will show which months are the hottest and coldest, including the months with the most precipitation and snowfall. Then group and compare the weather data between the four cities. 
 
@@ -33,21 +33,22 @@ Step 4: Once Visual Studio Code is installed click the Extensions icon, type in 
 Step 5: Once the desired package is selected, click Install.
 
 ## Required Packages
-Use pip3 to install Pandas
+Use pip3 to install Pandas:
 pip3 install pandas
 
-Use pip3 to install Matplotlib
+Use pip3 to install Matplotlib:
 pip3 install matplotlib
 
 If using a virtual environment or conda environment
-Use pip3 to install ipykernel
+
+Use pip3 to install ipykernel:
 pip3 install ipykernel
 
 Numpy and DateTime should come with python, if not, use the following instructions to install each package:
-Use pip3 to install DateTime
+Use pip3 to install DateTime:
 pip3 install DateTime
 
-Use pip3 to install Numpy
+Use pip3 to install Numpy:
 pip3 install numpy
 
 ## Features Required for Project by CodeKY
