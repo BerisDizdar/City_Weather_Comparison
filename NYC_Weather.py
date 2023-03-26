@@ -1,7 +1,5 @@
 #Python packages
 import pandas as pd 
-import numpy as np 
-import datetime 
 
 #DataFrame
 df_NYC_W = pd.read_csv('Weather_Datasets/New_York_Weather.csv') 
@@ -24,7 +22,6 @@ df_NYC_W['DATE'] = pd.to_datetime(df_NYC_W['DATE'])
 
 #Remove columns 
 df_NYC_W.drop(columns = ['LATITUDE', 'LONGITUDE'], inplace = True) 
-
 
 #Monthly data visualization
 NYC_Jan_data = df_NYC_W[0:31]
@@ -51,5 +48,3 @@ NYC_monthly_sum = df_NYC_W.groupby(df_NYC_W.DATE.dt.month)[['SNOW', 'PRECIPITATI
 #print(NYC_monthly_sum)
 
 print(df_NYC_W.tail())  
-
-

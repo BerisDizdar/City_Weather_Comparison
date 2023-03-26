@@ -1,6 +1,5 @@
 #Python packages
 import pandas as pd 
-import numpy as np 
 
 #DataFrame 
 df_LA_W = pd.read_csv('Weather_Datasets/Los_Angeles_Weather.csv')
@@ -50,5 +49,3 @@ LA_monthly_min = df_LA_W.groupby(df_LA_W.DATE.dt.month)[['HIGH', 'LOW', 'AVERAGE
 #print(LA_monthly_min) 
 LA_monthly_sum = df_LA_W.groupby(df_LA_W.DATE.dt.month)[['SNOW', 'PRECIPITATION']].sum()
 #print(LA_monthly_sum) 
-
-

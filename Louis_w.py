@@ -1,7 +1,5 @@
 #Python packages
 import pandas as pd 
-import numpy as np 
-import datetime 
 
 #DataFrame
 df_Louis_w = pd.read_csv('Weather_Datasets/Louisville_Weather_CSV.csv') 
