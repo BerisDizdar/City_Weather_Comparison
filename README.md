@@ -11,13 +11,13 @@ Follow the steps below to install the Jupyter Notebook package on macOS using pi
 
 Step 1: Install the latest Python3 in MacOS.
 
-Step 2: Check if pip3 and python3 are correctly installed. python3 --version pip3 --version
+Step 2: Check if pip3 and Python3 are correctly installed. python3 --version pip3 --version
 
 Step 3: Upgrade your pip to avoid errors during installation. pip3 install --upgrade pip
 
 Step 4: Enter the following command to install Jupyter Notebook using pip3. pip3 install jupyter
 
-Step 5: Enter the command jupyter notebook in your terminal to start up Jupyter Notebook.
+Step 5: Enter the command Jupyter Notebook in your terminal to start up Jupyter Notebook.
 
 ### Alternate Method
 Jupyter notebook can be downloaded and used via Visual Studio Code extension.
@@ -31,6 +31,12 @@ Step 3: Follow the instalation instructions.
 Step 4: Once Visual Studio Code is installed click the Extensions icon, type in Jupyter Notebook.
 
 Step 5: Once the desired package is selected, click Install.
+
+### Windows Instructions
+To install Jupyter Notebook, Pandas, and Matplotlib using pip on Windows, fist make sure pip is updated in the Windows system.
+Use the following command to update pip: 
+
+python -m pip install --upgrade pip python -m pip install jupyter pip install pandas pip install matplotlib
 
 ## Required Packages
 Use pip3 to install Pandas:
@@ -56,8 +62,8 @@ Feature 1: Read in local csv file using Pandas read_function.
 
 Feature 2: Use built in Pandas functions to remove unnecessary columns, rename column names, fill NaN values with 0, change dates to DateTime, concatinate and groupby data.
 
-Feature 3: Use Pandas and Numpy to perform calculations on each csv dataset. Use mean(), max(), min(), sum(), and round() functions.
+Feature 3: Use Pandas to perform calculations on each csv dataset. Use mean(), max(), min(), sum(), and round() functions.
 
-Feature 4: Use Matplotlib to create plot graph and bar graph
+Feature 4: Create plot and bar graphs with Matplotlib.
 
 Feature 5: Add Markdwons on JupyterNotebook and description of data analysis.
