@@ -1,7 +1,7 @@
 # City_Weather_Comparison
 
-## To view the final project:
-1. Clone GitHub repository to a local local machine.
+## To view the final project
+1. Clone GitHub repository to a local machine.
 
 2. Open the 'City_Weather_Comparison.ipynb' file.
 
@@ -58,7 +58,7 @@ pip3 install DateTime
 Use pip3 to install Numpy:
 pip3 install numpy
 
-### If using a virtual environment or conda environment:
+### If using a virtual environment or conda environment
 
 Use pip3 to install ipykernel:
 pip3 install ipykernel
