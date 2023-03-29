@@ -1,7 +1,8 @@
 # City_Weather_Comparison
 
 ## To view the final project:
-1. Clone GitHub repository on local machine
+1. Clone GitHub repository to a local local machine.
+
 2. Open the 'City_Weather_Comparison.ipynb' file.
 
 ### Description of Notebook
@@ -21,7 +22,7 @@ Step 3: Upgrade your pip to avoid errors during installation. pip3 install --upg
 
 Step 4: Enter the following command to install Jupyter Notebook using pip3. pip3 install jupyter
 
-Step 5: Enter the command Jupyter Notebook in your terminal to start up Jupyter Notebook.
+Step 5: Enter the command Jupyter Notebook in your terminal to start up Jupyter Notebook. 
 
 ### Alternate Method
 Jupyter notebook can be downloaded and used via Visual Studio Code extension.
@@ -49,22 +50,23 @@ pip3 install pandas
 Use pip3 to install Matplotlib:
 pip3 install matplotlib
 
-If using a virtual environment or conda environment
-
-Use pip3 to install ipykernel:
-pip3 install ipykernel
-
 Numpy and DateTime should come with python, if not, use the following instructions to install each package:
+
 Use pip3 to install DateTime:
 pip3 install DateTime
 
 Use pip3 to install Numpy:
 pip3 install numpy
 
+### If using a virtual environment or conda environment:
+
+Use pip3 to install ipykernel:
+pip3 install ipykernel
+
 ## Features Required for Project by CodeKY
 Feature 1: Read in local csv file using Pandas read_function.
 
-Feature 2: Use built in Pandas functions to remove unnecessary columns, rename column names, fill NaN values with 0, change dates to DateTime, concatinate and groupby data.
+Feature 2: Use built in Pandas functions to remove unnecessary columns, change column names, fill NaN values with 0, change dates to DateTime, concatinate and groupby data.
 
 Feature 3: Use Pandas to perform calculations on each csv dataset. Use mean(), max(), min(), sum(), and round() functions.
 
