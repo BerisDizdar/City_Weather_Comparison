@@ -1,6 +1,10 @@
 # City_Weather_Comparison
-Open the 'City_Weather_Comparison.ipynb' file.
 
+## To view the final project:
+1. Clone GitHub repository on local machine
+2. Open the 'City_Weather_Comparison.ipynb' file.
+
+### Description of Notebook
 This Jupyter Notebook contains daily weather data for Cincinnati OH/Northern KY, Louisville KY, New York City NY, and Los Angeles CA, from January 2022 to December 2022. Analysis of daily temperature highs, lows, and averages, as well as snowfall and precipitation will show which months are the hottest and coldest, including the months with the most precipitation and snowfall. Then group and compare the weather data between the four cities. 
 
 ## Required Programs
