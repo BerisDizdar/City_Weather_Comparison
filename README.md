@@ -63,6 +63,11 @@ pip3 install numpy
 Use pip3 to install ipykernel:
 pip3 install ipykernel
 
+### To generate a requirements.txt file
+Open terminal, once inside, type, pip3 instal pigar, then press enter.
+
+Next, type, pigar generate, then press enter.
+
 ## Features Required for Project by CodeKY
 Feature 1: Read in local csv file using Pandas read_function.
 
