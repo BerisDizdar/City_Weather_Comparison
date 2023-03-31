@@ -9,7 +9,7 @@
 This Jupyter Notebook contains daily weather data for Cincinnati OH/Northern KY, Louisville KY, New York City NY, and Los Angeles CA, from January 2022 to December 2022. Analysis of daily temperature highs, lows, and averages, as well as snowfall and precipitation will show which months are the hottest and coldest, including the months with the most precipitation and snowfall. Then group and compare the weather data between the four cities. 
 
 ## Required Programs
-### The following programs must be installed in order to run this project:
+### The following programs must be installed in order to run this project
 Download the latest version of python from https://www.python.org/downloads/ and follow the recommended steps. 
 
 Follow the steps below to install the Jupyter Notebook package on macOS using pip:
