@@ -8,24 +8,20 @@ df_cin_nky_w = pd.read_csv('Weather_Datasets/Weather_Data-Cinci_NKY_Weather.csv'
 #Visualizing Data
 df_cin_nky_w.head(15) 
 column_list = df_cin_nky_w.columns
+print(column_list)
 data_types = df_cin_nky_w.dtypes
 
 df_cin_nky_w['DATE'] = pd.to_datetime(df_cin_nky_w['DATE']) 
-print(df_cin_nky_w.dtypes) 
-
-#Variables 
-#date = df_cin_nky_w['DATE'] 
-min_temp = df_cin_nky_w['TMIN'] 
-max_temp = df_cin_nky_w['TMAX'] 
-snow_fall = df_cin_nky_w['SNOW'] 
-rain_fall = df_cin_nky_w['PRCP']
+#print(df_cin_nky_w.dtypes) 
 
 #Renaming Columns
-df_cin_nky_w.rename(columns = {'NAME': 'LOCATION'}, inplace= True)
+'''df_cin_nky_w.rename(columns = {'NAME': 'LOCATION'}, inplace= True)
 df_cin_nky_w.rename(columns = {'TMIN': 'LOW'}, inplace = True)
 df_cin_nky_w.rename(columns = {'TMAX': 'HIGH'}, inplace = True) 
 df_cin_nky_w.rename(columns = {'PRCP': 'PRECIPITATION'}, inplace = True)  
-df_cin_nky_w.rename(columns = {'TAVG': 'AVERAGE'}, inplace = True)  
+df_cin_nky_w.rename(columns = {'TAVG': 'AVERAGE'}, inplace = True)'''
+
+df_cin_nky_w.rename(columns = {'NAME': 'LOCATION', 'TMIN': 'LOW', 'TMAX': 'HIGH', 'PRCP': 'PRECIPITATION', 'TAVG': 'AVERAGE'}, inplace = True) 
 
 #Remove Columns
 df_cin_nky_w.drop(columns = ['LATITUDE', 'LONGITUDE'], inplace = True)  
@@ -60,11 +56,11 @@ C_NKY_monthly_sum = df_cin_nky_w.groupby(df_cin_nky_w.DATE.dt.month)[['SNOW', 'P
 #print(C_NKY_monthly_sum) 
 
 C_NKY_monthly_avg = df_cin_nky_w.groupby(df_cin_nky_w.DATE.dt.month)[['AVERAGE']].mean() 
-#print(round(C_NKY_monthly_avg, 2))
+#print(round(C_NKY_monthly_avg, 1))
 
 C_NKY_monthly_mean2 = df_cin_nky_w.groupby(df_cin_nky_w.DATE.dt.strftime('%B'))[['HIGH']].mean()  
 #print(round(C_NKY_monthly_mean2, 2)) 
 
-print(C_NKY_monthly_mean2.sort_values('DATE'))
+#print(C_NKY_monthly_mean2.sort_values('DATE'))
 
-df_cin_nky_w.head()
+print(df_cin_nky_w.head()) 

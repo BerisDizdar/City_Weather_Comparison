@@ -48,4 +48,4 @@ LA_monthly_max = df_LA_W.groupby(df_LA_W.DATE.dt.month)[['HIGH', 'LOW', 'AVERAGE
 LA_monthly_min = df_LA_W.groupby(df_LA_W.DATE.dt.month)[['HIGH', 'LOW', 'AVERAGE', 'SNOW', 'PRECIPITATION']].min()
 #print(LA_monthly_min) 
 LA_monthly_sum = df_LA_W.groupby(df_LA_W.DATE.dt.month)[['SNOW', 'PRECIPITATION']].sum()
-#print(LA_monthly_sum) 
+print(LA_monthly_sum) 
